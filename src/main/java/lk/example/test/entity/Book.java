@@ -5,6 +5,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
  * @author Pramuda Liyanage <pramudatharika@gmail.com>
  * @since 1/19/22
@@ -14,8 +17,10 @@ import lombok.Setter;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
 public class Book {
 
+    @Id
     private String id;
     private String name;
     private String author;
